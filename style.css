@@ -138,7 +138,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: #228;
+    background: #0070C0;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -301,6 +301,10 @@ section .title::after{
     border-radius: 6px;
     border: 2px solid #0070C0;
     transition: all 0.3s ease;
+
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
 
@@ -322,7 +326,7 @@ section .title::after{
 
 .scooterImgs, .teams{
     color:#fff;
-    background: #111;
+    background: #fff4d4;
     
 }
 
@@ -547,12 +551,12 @@ section .title::after{
 }
 .contact .right form .field,
 .contact .right form .fields .field{
-    height: 45px;
+   
     width: 100%;
     margin-bottom: 15px;
 }
 .contact .right form .textarea{
-    height: 80px;
+    
     width: 100%;
 }
 .contact .right form .name{
@@ -1006,16 +1010,39 @@ footer span a:hover{
 }
 .projects
 {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
+    display: flex;
+    justify-content: space-between;
     text-align: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
 .projectButton
 {
-    height: 100px;
-    line-height: 80px;
+    width: 30%;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    background: #0070C0;
+    color: #fff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 2px solid #0070C0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
+.projectButton:hover
+{
+    border-color: #555;
+    color: crimson;
+    width: 40%;
+    height: 250px;
+}
+
 @media (max-width: 627px) 
 {
     .projectButton
@@ -1025,5 +1052,207 @@ footer span a:hover{
 }
 .androidApps
 {
-    background-image: url("images/androidApps.png");
+    background-image: url("images/androidApps.png") !important;
+    background-position: center;
+    background-size: cover;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2.title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact {
+    padding: 50px 0;
+    /* background-color: #fff; */
+}
+
+.max-width {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Left Column Styles */
+.contact .column.left {
+    flex: 1;
+    max-width: 45%;
+    margin-right: 5%;
+}
+
+.contact .column.left .text {
+    font-size: 1.8em;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact .column.left .icons {
+    margin-top: 20px;
+}
+
+.contact .column.left .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact .column.left .row i {
+    font-size: 1.5em;
+    color: #333;
+    margin-right: 15px;
+}
+
+.contact .column.left .row .info {
+    color: #333;
+}
+
+.contact .column.left .row .info .head {
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.contact .column.left .row .info .sub-title {
+    font-size: 1em;
+}
+
+/* Right Column Styles (Form) */
+.contact .column.right {
+    flex: 1;
+    max-width: 45%;
+}
+
+.contact .column.right .text {
+    font-size: 1.8em;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact .column.right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .column.right form .fields {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact .column.right form .field {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contact .column.right form .fields .field {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.contact .column.right form .fields .field:last-child {
+    margin-right: 0;
+}
+
+.contact .column.right form input, 
+.contact .column.right form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact .column.right form input:focus, 
+.contact .column.right form textarea:focus {
+    border-color: #333;
+}
+
+.contact .column.right form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact .column.right form .button {
+    text-align: center;
+}
+
+.contact .column.right form .button button {
+    padding: 12px 25px;
+    background: #0070C0;
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact .column.right form .button button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact .column.left,
+    .contact .column.right {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .contact .column.right form .fields .field {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+
+@media (max-width: 768px) 
+{
+    .projects {
+        flex-direction: column;
+    }
+
+    .projectButton {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+.backButton
+{
+    position: fixed;
+    right: 10px;
+    font-size: 20px;
+    background: #d5cebb;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 10px 0px 0;
+    color: #fff;
+    cursor: pointer;
+}
+.backButton:hover
+{
+    color: crimson;
 }

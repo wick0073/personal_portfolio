@@ -82,11 +82,10 @@ Programming C#, ASP.NET, VB.NET and PHP.
         <div class="max-width">
             <h2 class="title">Projects</h2>
             <div class="scooterImgs-content">
-                
                 <div class="column right projects">
-                    <a href="portfolio_page1.html" class="projectButton androidApps">Android Apps</a>
-                    <a href="portfolio_page2.html" class="projectButton">Web Development</a>
-                    <a href="portfolio_page3.html" class="projectButton">Mechatronics</a>
+                    <div class="projectButton androidApps" onclick="location.href='portfolio_page1.html';">Android Apps</div>
+                    <div class="projectButton" onclick="location.href='portfolio_page2.html';">Web Development</div>
+                    <div class="projectButton" onclick="location.href='portfolio_page3.html';">Mechatronics</div>
                 </div>
             </div>
         </div>
@@ -96,9 +95,17 @@ Programming C#, ASP.NET, VB.NET and PHP.
         <div class="max-width">
             <h2 class="title">Videos</h2>
             <div class="Videos-content" style="text-align: center;">
-                   
-                    <iframe width="85%" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=1&?autoplay=1" align="middle"></iframe>
-                  
+                
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/MVU6vyEwwaQ?si=p23Oae5-ki8159fI" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
 
             </div>
         </div>
@@ -170,49 +177,69 @@ Programming C#, ASP.NET, VB.NET and PHP.
 
 
     <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Get in Touch</div>
-                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p> -->
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Hashan Wickramasinghe</div>
-                            </div>
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contact me</h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="text">Get in Touch</div>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">Name</div>
+                            <div class="sub-title">Hashan Wickramasinghe</div>
                         </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Ottawa, Canada</div>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head">Address</div>
+                            <div class="sub-title">Ottawa, Canada</div>
                         </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">sukitharox@yahoo.com</div>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title">sukitharox@yahoo.com</div>
                         </div>
-
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Voice</div>
-                                <div class="sub-title">+613 252 1055</div>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-phone"></i>
+                        <div class="info">
+                            <div class="head">Voice</div>
+                            <div class="sub-title">+613 252 1055</div>
                         </div>
                     </div>
                 </div>
-
+            </div>
+            <div class="column right">
+                <div class="text">Message Me</div>
+                <form action="#" method="POST">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="field email">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="field subject">
+                        <input type="text" name="subject" placeholder="Subject">
+                    </div>
+                    <div class="field textarea">
+                        <textarea name="message" cols="30" rows="10" placeholder="Message..." required></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- footer section start -->
     <footer>
