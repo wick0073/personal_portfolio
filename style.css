@@ -1050,12 +1050,27 @@ footer span a:hover{
     line-height: 35px;
     }
 }
+
+
 .androidApps
 {
-    background-image: url("images/androidApps.png") !important;
+    background-image: url("images/androidApps.jpg") !important;
     background-position: center;
     background-size: cover;
 }
+.webDevs
+{
+    background-image: url("images/webDevs.jpg") !important;
+    background-position: center;
+    background-size: cover;
+}
+.mechatrons
+{
+    background-image: url("images/Mechatronics.jpg") !important;
+    background-position: center;
+    background-size: cover;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
