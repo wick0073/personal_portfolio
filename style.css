@@ -327,7 +327,7 @@ section .title::after{
 }
 
 .scooterImgs, .teams{
-    color:#fff;
+    /* color:#fff; */
     background: #fff4d4;
     padding: 0 0 70px 0;
     
@@ -1086,7 +1086,7 @@ h2.title
     text-align: center;
     font-size: 2.5em;
     margin-bottom: 00px;
-    color: #333;
+    color: #ffffff;
     background: #00a3ff;
     padding: 25px;
     border-bottom: 5px solid #5d7b8b;
@@ -1286,4 +1286,14 @@ h2.title
 .titleGap
 {
     margin: 70px auto 0;
+}
+.projectDesc
+{
+    color: #000 !important;
+    margin: 50px 0 0 0;
+    text-align: justify;
+}
+.projectDesc ul
+{
+    margin: 0px 0 0 15%;
 }
