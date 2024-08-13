@@ -672,13 +672,6 @@ footer span a:hover{
 .Videos .title::after {
     background: #fff;
     content: "( Project LioRide )";
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    font-size: 20px;
-    color: crimson;
-    padding: 0 5px;
-    transform: translateX(-50%);
 }
 .Images .title::before
 {
