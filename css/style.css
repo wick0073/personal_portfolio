@@ -1237,10 +1237,14 @@ h2.title
     color: #fff;
     cursor: pointer;
     z-index: 999;
+    opacity: 40%;
+    transition: opacity 0.3s ease;
 }
 .backButton:hover
 {
     color: crimson;
+    opacity: 100%;
+    transition: opacity 0.3s ease;
 }
 .projectContent
 {
