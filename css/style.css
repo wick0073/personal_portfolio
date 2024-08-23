@@ -681,12 +681,19 @@ footer span a:hover{
   display: grid;
 }
 .full .content img {
-    left: 50%;
+    /* left: 50%;
     transform: translate3d(0, 0, 0);
     animation: zoomin 1s ease;
     max-width: auto;
     max-height: 30%;
-    margin: 20px auto;
+    margin: 20px auto; */
+
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    transform: translate3d(0, 0, 0);
+    animation: zoomin 1s ease;
+    margin: 0;
 }
 
 .gallery {
