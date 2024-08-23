@@ -1268,6 +1268,7 @@ h2.title
     height: 260px; */
     border-radius: 10px;
     border: 3px solid #000;
+    width: 100%;
 }
 .githubQR
 {
@@ -1321,6 +1322,8 @@ h2.title
     padding: 5px;
     border-radius: 10px;
     transition: background-color 0.3s ease;
+    width: 100%;
+    display: block;
 }
 .clickHereContact:hover
 {
