@@ -168,7 +168,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("../images/banner.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -864,7 +864,7 @@ footer span a:hover{
     }
     .home
     {
-    background: url("images/banner.jpg") no-repeat 80% 0%;
+    background: url("../images/banner.jpg") no-repeat 80% 0%;
     }
 }
 
@@ -1036,19 +1036,19 @@ footer span a:hover{
 
 .androidApps
 {
-    background-image: url("images/androidApps.jpg") !important;
+    background-image: url("../images/androidApps.jpg") !important;
     background-position: center;
     background-size: cover;
 }
 .webDevs
 {
-    background-image: url("images/webDevs.jpg") !important;
+    background-image: url("../images/webDevs.jpg") !important;
     background-position: center;
     background-size: cover;
 }
 .mechatrons
 {
-    background-image: url("images/Mechatronics.jpg") !important;
+    background-image: url("../images/Mechatronics.jpg") !important;
     background-position: center;
     background-size: cover;
 }
@@ -1262,7 +1262,7 @@ h2.title
 }
 .linkedInQR, .githubQR
 {
-    background-image: url(images/linkedIn_QR.png);
+    background-image: url(../images/linkedIn_QR.png);
     background-size: cover;
     width: 225px;
     height: 260px;
@@ -1271,7 +1271,7 @@ h2.title
 }
 .githubQR
 {
-    background-image: url(images/github_QR.png);
+    background-image: url(../images/github_QR.png);
 }
 .contact-content .info
 {
@@ -1325,4 +1325,8 @@ h2.title
 .clickHereContact:hover
 {
     background: #838383;
+}
+#skills
+{
+    background-color: #111827;
 }
