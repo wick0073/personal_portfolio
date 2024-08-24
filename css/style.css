@@ -1362,14 +1362,23 @@ h2.title
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.9);
+
+   
 }
 
 /* Modal Content (image) */
 .modal-content {
-    margin: auto;
+    /* margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 700px; */
+
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    transform: translate3d(0, 0, 0);
+    animation: zoomin 1s ease;
+    margin: 0;
 }
 
 /* Navigation buttons */
