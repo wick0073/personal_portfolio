@@ -106,3 +106,35 @@ gallery.querySelectorAll('.gallery-item').forEach(function (item) {
         item.classList.toggle('full');
     });
 });
+//============================================================================================================================================
+// JavaScript to handle modal image display and navigation
+var modal = document.getElementById("imageModal");
+var modalImg = document.getElementById("modalImage");
+var images = document.querySelectorAll("#gallery img");
+var currentImageIndex;
+
+images.forEach((img, index) => {
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        currentImageIndex = index;
+    }
+});
+
+var closeBtn = document.querySelector(".close");
+closeBtn.onclick = function() { 
+    modal.style.display = "none";
+}
+
+var prevBtn = document.querySelector(".prev");
+var nextBtn = document.querySelector(".next");
+
+prevBtn.onclick = function() {
+    currentImageIndex = (currentImageIndex === 0) ? images.length - 1 : currentImageIndex - 1;
+    modalImg.src = images[currentImageIndex].src;
+}
+
+nextBtn.onclick = function() {
+    currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
+    modalImg.src = images[currentImageIndex].src;
+}
