@@ -1373,7 +1373,7 @@ h2.title
     max-width: 700px; */
 
     width: 100vw;
-    height: 85vh;
+    height: 80vh;
     object-fit: contain;
     transform: translate3d(0, 0, 0);
     animation: zoomin 1s ease;
