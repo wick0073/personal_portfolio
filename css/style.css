@@ -1402,6 +1402,7 @@ h2.title
     background: #000;
     border: 1px solid;
     width: 45px;
+    padding: 5px 0 0 0px;
 }
 
 .close:hover, .close:focus {
@@ -1423,7 +1424,6 @@ h2.title
     color: white;
     font-weight: bold;
     font-size: 20px;
-    /* padding: 10px 20px; */
     text-align: center;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.5);
